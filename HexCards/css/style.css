@@ -67,6 +67,20 @@ body {
     transition: background-color 0.2s, border-color 0.2s;
     width: clamp(80px, 10vw, 150px);
     height: clamp(120px, 15vh, 180px);
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.card-resposta {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: black;
+    text-align: center;
+    word-wrap: break-word;
+    transition: background-color 0.2s, border-color 0.2s;
+    width: clamp(80px, 10vw, 150px);
+    height: clamp(120px, 15vh, 180px);
+    font-size: 12px;
 }
 .card:hover {
     background-color: #e2e6ea;

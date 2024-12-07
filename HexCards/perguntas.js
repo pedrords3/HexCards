@@ -25,7 +25,7 @@ const perguntas = [
     {id:24, dinamica: false, pergunta:"A POLÍCIA MILITAR ESTÁ AGORA USANDO _____ COMO UMA ARMA DE COMBATE AO CRIME."},
     {id:25, dinamica: false, pergunta:"QUAL É O MELHOR AMIGO DE UMA MULHER?"},
     {id:26, dinamica: false, pergunta:"POR QUE ESTOU DOIDO?"},
-    {id:27, dinamica: false, pergunta:"QUAL A PRIMEIRA COISA QUE VOCÊ FAZ DEPOIS DE ACRODAR?"},
+    {id:27, dinamica: false, pergunta:"QUAL A PRIMEIRA COISA QUE VOCÊ FAZ DEPOIS DE ACORDAR?"},
     {id:28, dinamica: false, pergunta:"EU VI UM FILME LOUCO ONTEM. ELE FALA SOBRE _____."},
     {id:29, dinamica: false, pergunta:"EU PRESENCIEI AS MELHORES MENTES DA MINHA GERAÇÃO SEREM DESTRUÍDAS POR _____."},
     {id:30, dinamica: false, pergunta:"COMO EU ESTOU COMPENSANDO PELO MEU MINÚSCULO PÊNIS?"},

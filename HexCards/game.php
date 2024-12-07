@@ -47,7 +47,7 @@ $playerName = $_SESSION['playerName'];
         <div id="main">
             <div class="text-center mb-3">
                 <h5>Carta de Pergunta</h5>
-                <div id="question" class="card" style="width: 200px; height: 150px;">
+                <div id="question" class="card-resposta" style="width: 200px; height: 150px;">
                     <p>Pergunta do jogo será exibida aqui</p>
                 </div>
             </div>
