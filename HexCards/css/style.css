@@ -1,0 +1,154 @@
+body {
+    height: 100vh;
+    overflow: hidden; /* Evita barras de rolagem na página */
+}
+#gameContainer {
+    display: grid;
+    grid-template-areas: 
+        "chat main players"
+        "hand hand hand";
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: auto 240px; /*tamanho da pagina*/
+    height: 100%;
+}
+
+/* Áreas principais */
+#chat { 
+    grid-area: chat; 
+    overflow-y: auto; 
+    border-right: 1px solid #ddd; 
+    padding: 10px; 
+    display: flex; 
+    flex-direction: column; 
+}
+#main {
+     grid-area: main; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 10px; 
+    overflow: hidden; 
+}
+#players { 
+    grid-area: players; 
+    overflow-y: auto; 
+    border-left: 1px solid #ddd;
+    padding: 10px; 
+}
+#hand { 
+    grid-area: hand; 
+    display: flex; 
+    gap: 10px; 
+    overflow-x: auto; 
+    padding: 10px; 
+    /* background-color: #f8f9fa;  */
+}
+
+
+
+/* Chat sempre visível */
+#chatMessages { 
+    flex: 1; 
+    overflow-y: auto; 
+}
+#chatForm { 
+    margin-top: 10px; 
+}
+
+/* Cartas */
+.card {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #fff;
+    text-align: center;
+    word-wrap: break-word;
+    transition: background-color 0.2s, border-color 0.2s;
+    width: clamp(80px, 10vw, 150px);
+    height: clamp(120px, 15vh, 180px);
+}
+.card:hover {
+    background-color: #e2e6ea;
+    cursor: pointer;
+}
+
+/* Cartas no centro (respostas) com rolagem se necessário */
+.response-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    overflow-y: auto;
+    /* max-height: 50%; */
+    max-height: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    /* background-color: #f8f9fa; */
+    border-radius: 5px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    /* #chat {
+       height: 200px !important;
+    }
+    #gameContainer {
+        grid-template-areas: 
+            "main"
+            "chat"
+            "players"
+            "hand";
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto 150px;
+    } */
+    #chat {
+        display: none; /* Oculta o chat */
+    }
+
+    #gameContainer {
+        grid-template-areas: 
+            "main"
+            "players"
+            "hand"; /* Remove o espaço reservado para o chat */
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto 0px;
+    }
+    #chat, #main, #players {
+        border: none;
+        padding: 5px;
+    }
+    .card {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .card {
+        width: 80px;
+        height: 120px;
+        font-size: 0.7rem;
+    }
+}
+
+
+
+/* Estilo global para navegadores baseados em WebKit (Chrome, Edge, etc.) */
+* {
+    scrollbar-width: thin; /* Para navegadores como Firefox */
+    scrollbar-color: black transparent; /* Cor do scrollbar e da trilha */
+  }
+  
+  *::-webkit-scrollbar {
+    width: 3px; /* largura do scrollbar vertical */
+    height: 3px; /* altura do scrollbar horizontal */
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    background-color: black; /* cor do "polegar" do scrollbar */
+    border-radius: 5px; /* opcional: bordas arredondadas */
+  }
+  
+  *::-webkit-scrollbar-track {
+    background: transparent; /* fundo da trilha do scrollbar */
+  }
+  

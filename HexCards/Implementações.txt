@@ -1,0 +1,24 @@
+Jogo de Cartas implementações:
+
+- Registro de votos pelos jogadores
+Objetivo: Após todos enviarem suas cartas de resposta, permitir que cada jogador vote em uma das cartas enviadas, com a restrição de não votar na própria carta.
+
+- Processar os votos
+Objetivo: Determinar a carta mais votada e associar o ponto ao jogador dono da carta.
+
+-  Encerrar a rodada e preparar a próxima
+Objetivo: Após contabilizar os votos, reiniciar a rodada com uma nova pergunta e novas cartas.
+
+- Exibir pontuação ao lado dos jogadores
+Objetivo: Atualizar e mostrar a pontuação acumulada ao lado de cada jogador na lista.
+____________________________________________________________________
+
+Continuar a pergunta chatGPT
+Precisa ajustar: 
+- pode deixar todas as respostas na tela, não precisa ocultar a sua resposta quando for a votação, so exibir uma mensagem para não votar na própria resposta
+
+- quando terminar a votação e contar os pontos, deve remover a carta que foi enviada e ela não deve mais aparecer para ninguém e receber uma nova no lugar.
+
+- so pode votar 1 vez por rodada - código mexido mas não funciona ainda. Recebe Undefined, voce já votou... Não pode exibir mensagem para todos os jogadores que já votou
+
+obs: pontuação do vencedor parou de funcionar. VOLTAR E TESTAR
