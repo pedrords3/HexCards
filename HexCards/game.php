@@ -93,7 +93,7 @@ $playerName = $_SESSION['playerName'];
     <!-- JavaScript customizado -->
     <script>
         //  const ws = new WebSocket('ws://localhost:8080'); // local
-         const ws = new WebSocket('wss://chat-tqep.onrender.com'); // servidor
+         const ws = new WebSocket('https://hexcardsserver.onrender.com'); // servidor
         document.getElementById('chatForm').addEventListener('submit', function (e) {
             e.preventDefault();
             const chatInput = document.getElementById('chatInput');
